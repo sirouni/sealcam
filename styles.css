@@ -201,7 +201,7 @@ a:active,
   background: var(--color-wax);
   color: var(--color-button-ink);
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -395,10 +395,8 @@ a:active,
   font-weight: 650;
 }
 
-.lang-secondary {
-  margin-top: var(--space-3xl);
-  padding-top: var(--space-xl);
-  border-top: var(--rule-hair) solid var(--color-rule);
+.lang-secondary .steps {
+  margin-top: var(--space-lg);
 }
 
 .btn {
