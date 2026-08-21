@@ -395,7 +395,7 @@ a:active,
   font-weight: 650;
 }
 
-.lang-en {
+.lang-secondary {
   margin-top: var(--space-3xl);
   padding-top: var(--space-xl);
   border-top: var(--rule-hair) solid var(--color-rule);
