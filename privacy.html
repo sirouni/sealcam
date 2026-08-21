@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策 — SealCam</title>
+  <meta name="description" content="SealCam 隐私政策：照片不上传，验真在本地完成。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://sirouni.github.io/sealcam/privacy.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="nav-mast">
+    <p class="mast-line">Privacy · SealCam</p>
+    <p class="mast-name"><a href="./">SealCam</a></p>
+    <nav class="mast-nav" aria-label="站点">
+      <ul>
+        <li><a href="terms.html">条款</a></li>
+        <li><a href="privacy.html" aria-current="page">隐私</a></li>
+        <li><a href="support.html">支持</a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <main id="main" class="wrap doc">
+    <h1>隐私政策</h1>
+    <p class="date">生效日期：2026年8月21日 · 产品：SealCam（iOS）</p>
+
+    <p>本政策说明 SealCam 如何处理与拍摄、签发、验真和购买有关的信息。使用本 App 即表示你理解下述做法。若不同意，请停止使用。</p>
+
+    <h2>我们不运营照片服务器</h2>
+    <p>SealCam <strong>不把照片或视频上传到我们的服务器</strong>。签发与验真在设备本地完成。本版本没有用于存储或分析你媒体文件的自建后端。</p>
+    <p>验真始终免费，也不经过我们的后端。</p>
+
+    <h2>我们不提供账号</h2>
+    <p>本 App 不提供账户注册，不出售个人数据。偏好、免费额度计数和购买状态保存在本机（例如 UserDefaults 与 Apple 的 StoreKit 收据）。卸载 App 通常会删除本机偏好。</p>
+
+    <h2>会离开本机的请求</h2>
+    <p>下列功能会向第三方发出网络请求。它们会按各自政策看到你的 IP 地址和常规 HTTP 元数据——这是访问互联网的通常成本，不是我们把照片卖给第三方。</p>
+    <ul>
+      <li><strong>Apple App Attest：</strong>签发时向 Apple 证明正版 App。照片本身不发给 Apple 作为内容托管。</li>
+      <li><strong>App Store / StoreKit：</strong>购买、恢复购买和订阅状态由 Apple 管理。付款信息不经过我们。</li>
+      <li><strong>可信时间（默认关闭，SealCam Pro）：</strong>打开后，快门前对随机 32 字节盖时间戳，签发后再对内容哈希盖时间戳。默认机构为 Sigstore 与 FreeTSA。<strong>只发送 32 字节哈希，不发送照片或视频。</strong>无网络或机构无响应时，这次拍摄失败并提示。</li>
+    </ul>
+
+    <h2>留在文件里、不单独上传的信息</h2>
+    <ul>
+      <li><strong>定位（可关）：</strong>开启「签发时写入定位」时，最近坐标写入照片 EXIF 或录像的 QuickTime 位置原子，并计入签名。位置留在你发出的原文件里，我们不单独收集。关闭则不请求定位。</li>
+      <li><strong>镜头朝向与环境小图（Pro，可关）：</strong>写入签发文件作对照，不能证明未翻拍。环境小图是低清超广角缩略图，随原文件走，不上我们的云。</li>
+      <li><strong>签发凭证：</strong>含稳定 keyId，可关联同一安装签发的多份文件（已在产品中披露）。</li>
+    </ul>
+
+    <h2>系统权限</h2>
+    <p>相机、相册、定位仅在相应功能需要时请求。关闭对应开关后，签发仍可在不写入该项的情况下进行（定位开启却拿不到坐标时，这次拍摄会失败并提示）。</p>
+
+    <h2>分析与追踪</h2>
+    <p>本版本不包含第三方广告或追踪 SDK，也不用数据在其他 App 之间追踪你。隐私清单声明不追踪、不收集需披露的数据类型。</p>
+
+    <h2>儿童</h2>
+    <p>本 App 不以 13 岁以下儿童为对象。</p>
+
+    <h2>你的选择</h2>
+    <ul>
+      <li>可随时关闭定位、朝向、环境小图和可信时间。</li>
+      <li>可通过系统设置管理或取消订阅。</li>
+      <li>可停止使用并卸载 App。</li>
+    </ul>
+
+    <h2>联系</h2>
+    <p>隐私问题请发邮件至 <a href="mailto:sirouni@gmail.com">sirouni@gmail.com</a>，或在 <a href="https://github.com/sirouni/sealcam/issues">GitHub Issues</a> 留言。也可打开本站 <a href="support.html">支持页</a>。</p>
+
+    <h2>变更</h2>
+    <p>我们可能更新本政策。重大变更会更新生效日期，并尽可能在 App 或本页提示。继续使用即表示接受更新后的政策。</p>
+
+    <section class="lang-en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective 21 August 2026 · Product: SealCam (iOS)</p>
+      <p>This policy describes how SealCam handles information related to capture, sealing, verification, and purchases. Using the app means you understand the practices below. If you do not, stop using the app.</p>
+      <h2>We do not run a photo server</h2>
+      <p>SealCam <strong>does not upload photos or videos to our servers</strong>. Issuance and verification happen on device. This version has no backend that stores or analyzes your media.</p>
+      <p>Verification stays free and does not go through our backend.</p>
+      <h2>No accounts</h2>
+      <p>The app does not offer accounts and does not sell personal data. Preferences, free-quota counts, and purchase state stay on the device (for example in UserDefaults and Apple StoreKit). Uninstalling the app usually deletes those preferences with it.</p>
+      <h2>Requests that leave the device</h2>
+      <p>These features make network requests to third parties. Those parties typically see your IP address and ordinary HTTP metadata — the usual cost of using the internet, not a sale of your photos by us.</p>
+      <ul>
+        <li><strong>Apple App Attest:</strong> used at issuance to prove a genuine app. Photos are not sent to Apple as hosted content.</li>
+        <li><strong>App Store / StoreKit:</strong> purchases, restores, and subscription status are managed by Apple. Payment details do not pass through us.</li>
+        <li><strong>Trusted time (off by default, SealCam Pro):</strong> when enabled, a random 32-byte value is timestamped before the shutter, then a content hash is timestamped after issuance. Default authorities are Sigstore and FreeTSA. <strong>Only 32-byte hashes are sent, never the photo or video.</strong> If the network or authority fails, that capture fails with an error.</li>
+      </ul>
+      <h2>Information that stays in the file</h2>
+      <ul>
+        <li><strong>Location (optional):</strong> if “embed location when issuing” is on, recent coordinates are written into EXIF or the video’s QuickTime location atom and bound into the signature. Location stays in the original file you send; we do not collect it separately. Turning the option off means we do not request location.</li>
+        <li><strong>Lens heading and context frame (Pro, optional):</strong> written into the sealed file for comparison only. They do not prove the scene was not rephotographed. The context frame is a low-resolution ultra-wide thumbnail that travels with the original file, not to our cloud.</li>
+        <li><strong>Seal credential:</strong> includes a stable keyId that can correlate files from the same install (disclosed in the product).</li>
+      </ul>
+      <h2>System permissions</h2>
+      <p>Camera, Photos, and Location are requested only when the related feature needs them. With the matching toggle off, issuance can proceed without writing that field (if location is on but no fix is available, that capture fails with an error).</p>
+      <h2>Analytics and tracking</h2>
+      <p>This version does not include third-party advertising or tracking SDKs and does not use data to track you across apps. The privacy manifest declares no tracking and no collected data types that require disclosure.</p>
+      <h2>Children</h2>
+      <p>This app is not directed at children under 13.</p>
+      <h2>Your choices</h2>
+      <ul>
+        <li>You can turn off location, heading, context frame, and trusted time at any time.</li>
+        <li>You can manage or cancel subscriptions in system Settings.</li>
+        <li>You can stop using the app and uninstall it.</li>
+      </ul>
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href="mailto:sirouni@gmail.com">sirouni@gmail.com</a> or <a href="https://github.com/sirouni/sealcam/issues">GitHub Issues</a>. See also the <a href="support.html">support page</a>.</p>
+      <h2>Changes</h2>
+      <p>We may update this policy. Material changes update the effective date and, where we can, a note in the app or on this page. Continued use means you accept the updated policy.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <nav class="foot-links" aria-label="法律">
+      <a href="./">首页</a>
+      <a href="terms.html">使用条款</a>
+      <a href="support.html">支持</a>
+    </nav>
+    <p>© 2026 SealCam</p>
+  </footer>
+</body>
+</html>
