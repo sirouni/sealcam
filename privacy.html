@@ -28,7 +28,7 @@
     <p>SealCam <strong>does not upload photos or videos to our servers</strong>. Issuance and verification happen on device. This version has no backend that stores or analyzes your media.</p>
     <p>Verification stays free and does not go through our backend.</p>
     <h2>No accounts</h2>
-    <p>The app does not offer accounts and does not sell personal data. Preferences, free-quota counts, and purchase state stay on the device (for example in UserDefaults and Apple StoreKit). Uninstalling the app usually deletes those preferences with it.</p>
+    <p>The app does not offer accounts and does not sell personal data. Toggle preferences stay in UserDefaults and are usually deleted if you uninstall the app. Free issuance counts are stored in the Keychain, and may sync with iCloud Keychain if you have it on, so deleting the app does not reset the free photo and video allowance. Purchases stay with your Apple ID via StoreKit.</p>
     <h2>Requests that leave the device</h2>
     <p>These features make network requests to third parties. Those parties typically see your IP address and ordinary HTTP metadata — the usual cost of using the internet, not a sale of your photos by us.</p>
     <ul>
@@ -67,7 +67,7 @@
       <p>SealCam <strong>不把照片或视频上传到我们的服务器</strong>。签发与验真在设备本地完成。本版本没有用于存储或分析你媒体文件的自建后端。</p>
       <p>验真始终免费，也不经过我们的后端。</p>
       <h2>我们不提供账号</h2>
-      <p>本 App 不提供账户注册，不出售个人数据。偏好、免费额度计数和购买状态保存在本机（例如 UserDefaults 与 Apple 的 StoreKit 收据）。卸载 App 通常会删除本机偏好。</p>
+      <p>本 App 不提供账户注册，不出售个人数据。开关类偏好保存在 UserDefaults，卸载 App 通常会删掉。免费签发次数记在钥匙串里，若你开了 iCloud 钥匙串还可能随 Apple ID 同步，所以删掉 App 不会重置免费照片和录像额度。购买状态由 Apple ID 经 StoreKit 管理。</p>
       <h2>会离开本机的请求</h2>
       <p>下列功能会向第三方发出网络请求。它们会按各自政策看到你的 IP 地址和常规 HTTP 元数据——这是访问互联网的通常成本，不是我们把照片卖给第三方。</p>
       <ul>
