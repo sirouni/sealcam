@@ -8,4 +8,4 @@ App Store Connect should use:
 
 - Privacy: https://sirouni.github.io/sealcam/privacy.html
 - Terms of Use (EULA): https://sirouni.github.io/sealcam/terms.html
-- Support: https://sirouni.github.io/sealcam/support.html
+- Support: https://github.com/sirouni/sealcam/issues
