@@ -1,11 +1,5 @@
-# SealCam site
+# SealCam is now LightSeal
 
-Public landing, terms, privacy, and support for SealCam.
+These pages redirect to https://sirouni.github.io/lightseal/.
 
-Live: https://sirouni.github.io/sealcam/
-
-App Store Connect should use:
-
-- Privacy: https://sirouni.github.io/sealcam/privacy.html
-- Terms of Use (EULA): https://sirouni.github.io/sealcam/terms.html
-- Support: https://sirouni.github.io/sealcam/support.html (GitHub Issues + email)
+Source: https://github.com/sirouni/lightseal
